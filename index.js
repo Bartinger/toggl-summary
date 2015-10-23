@@ -36,11 +36,14 @@ function getDayFromDate(dateStr) {
 }
 
 function calculateDuration(task) {
-	if (!task.start || !task.stop) {
-		return 0;
-	};
 	var start = new Date(task.start).getTime();
-	var stop = new Date(task.stop).getTime();
+	var stop;
+	if (task.stop) {
+		stop = new Date(task.stop).getTime();
+	} else {
+		stop = new Date().getTime();
+	}
+	
 	return stop - start;
 }
 
