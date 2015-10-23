@@ -9,6 +9,7 @@
   "author": "Dominic Bartl",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^2.10.2",
     "toggl-api": "0.0.3"
   }
 }
