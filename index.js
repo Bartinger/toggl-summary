@@ -32,7 +32,7 @@ toggl.getWorkspacesAsync()
 
 function getDayFromDate(dateStr) {
 	var date = new Date(dateStr);
-	return dateFormat(date, 'dd.m.yy');
+	return dateFormat(date, 'dddd - dd.m.yy');
 }
 
 function calculateDuration(task) {
